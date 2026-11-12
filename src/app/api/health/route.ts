@@ -1,13 +1,13 @@
-import { db } from "@/db";
-import { sql } from "drizzle-orm";
+import { getDbInfo } from "@/db";
+import { gatewayInfo } from "@/lib/studio/preview";
 
 export const dynamic = "force-dynamic";
 
 export async function GET() {
   try {
-    await db.execute(sql`select 1`);
-    return Response.json({ ok: true });
+    const db = await getDbInfo();
+    return Response.json({ ok: true, database: db.engine, previewGateway: gatewayInfo().listening });
   } catch {
-    return Response.json({ ok: false }, { status: 500 });
+    return Response.json({ ok: false, error: "database unavailable" }, { status: 503 });
   }
 }

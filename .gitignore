@@ -1,0 +1,12 @@
+node_modules/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+# Studio runtime data: database, encrypted secrets, cloned projects, exports
+data/
+*.log
+.DS_Store
+release/

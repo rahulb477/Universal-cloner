@@ -52,7 +52,7 @@ export default async function BrowsePage({ searchParams }: Props) {
                   <Link
                     href={`/browse?path=${encodeURIComponent(e.rel)}`}
                     aria-current={e.rel === rel ? "page" : undefined}
-                    className={`flex items-center justify-between gap-2 rounded-md px-3 py-1.5 hover:bg-white/10 ${e.rel === rel ? "bg-indigo-500/20 text-white" : "text-slate-300"}`}
+                    className={`flex items-center justify-between gap-2 rounded-md px-3 py-1.5 hover:bg-white/10 ${e.rel === rel ? "bg-[#c6f04d]/15 text-white" : "text-slate-300"}`}
                   >
                     <span className="truncate">{e.isDir ? "📁" : "📄"} {e.name}</span>
                     {!e.isDir ? <span className="shrink-0 text-xs text-slate-500">{fmt(e.size)}</span> : null}
@@ -84,7 +84,7 @@ export default async function BrowsePage({ searchParams }: Props) {
               <ul className="mt-3 list-disc space-y-1 pl-5">
                 {["SKILL.md", "PROMPT-START-HERE.md", "agents/README.md", "workflows/00-master-workflow.md", "mcp/README.md", "docs/verification-report.md"].map((f) => (
                   <li key={f}>
-                    <Link className="text-cyan-300 hover:underline" href={`/browse?path=${encodeURIComponent(f)}`}>{f}</Link>
+                    <Link className="text-[#c6f04d] hover:underline" href={`/browse?path=${encodeURIComponent(f)}`}>{f}</Link>
                   </li>
                 ))}
               </ul>

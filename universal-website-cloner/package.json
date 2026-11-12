@@ -1,0 +1,43 @@
+{
+  "name": "universal-website-cloner",
+  "version": "1.0.0",
+  "description": "A reusable AI-agent skill that inspects any authorized website and rebuilds an independent, working local version, with Playwright automation, visual diffing, QA and multi-agent workflows.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "setup": "npm install && npx playwright install chromium",
+    "check-env": "node scripts/check-env.mjs",
+    "init": "node scripts/init-project.mjs",
+    "pipeline": "node scripts/pipeline.mjs",
+    "crawl": "node scripts/crawl.mjs",
+    "screenshots": "node scripts/screenshot.mjs",
+    "diff": "node scripts/visual-diff.mjs",
+    "links": "node scripts/check-links.mjs",
+    "console": "node scripts/console-errors.mjs",
+    "a11y": "node scripts/a11y-check.mjs",
+    "perf": "node scripts/perf-audit.mjs",
+    "tokens": "node scripts/extract-design-tokens.mjs",
+    "assets": "node scripts/extract-assets.mjs",
+    "interactions": "node scripts/discover-interactions.mjs",
+    "auth-test": "node scripts/auth-test.mjs",
+    "regression": "node scripts/regression.mjs",
+    "scan-secrets": "node scripts/scan-secrets.mjs",
+    "state": "node scripts/state.mjs",
+    "mcp-check": "node scripts/mcp-check.mjs",
+    "validate": "node scripts/validate-repo.mjs",
+    "selftest": "node testing/selftest.mjs",
+    "package": "node scripts/package-zip.mjs"
+  },
+  "dependencies": {
+    "pixelmatch": "^8.0.0",
+    "playwright": "^1.65.0",
+    "pngjs": "^7.0.0"
+  },
+  "optionalDependencies": {
+    "axe-core": "^4.14.0"
+  }
+}

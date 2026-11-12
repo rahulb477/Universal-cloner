@@ -1,0 +1,12 @@
+---
+description: Use when the user wants to clone, rebuild, replicate or reverse-engineer a website's UI and functionality from a URL
+alwaysApply: false
+---
+
+Read `universal-website-cloner/SKILL.md` and follow it exactly.
+
+Non-negotiables:
+- Complete discovery (routes, screenshots, interactions, design tokens) before writing clone code.
+- Ask for the target URL, whether login is required, and authorised test credentials only if needed (env vars only).
+- Never bypass CAPTCHA, MFA, paywalls or access controls; never reuse private APIs/credentials.
+- Verify with scripts in `universal-website-cloner/scripts` and report only verified results.

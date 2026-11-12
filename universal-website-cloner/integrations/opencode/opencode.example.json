@@ -1,0 +1,7 @@
+{
+  "_comment": "EXAMPLE opencode.json fragment. Not active. Confirm schema against current opencode docs.",
+  "mcp": {
+    "playwright": { "type": "local", "command": ["npx", "@playwright/mcp@latest", "--headless"], "enabled": true },
+    "chrome-devtools": { "type": "local", "command": ["npx", "chrome-devtools-mcp@latest"], "enabled": false }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "_comment": "EXAMPLE project .mcp.json for Claude Code. Not active. Verify with `claude mcp list` and ../../mcp/verification.md.",
+  "mcpServers": {
+    "playwright": { "command": "npx", "args": ["@playwright/mcp@latest", "--headless"] },
+    "chrome-devtools": { "command": "npx", "args": ["chrome-devtools-mcp@latest"] }
+  }
+}

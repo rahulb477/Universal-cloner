@@ -1,0 +1,10 @@
+# EXAMPLE ONLY - merge into ~/.codex/config.toml. Not active configuration.
+# Confirm syntax against current Codex CLI docs; no secrets belong in this file.
+
+[mcp_servers.playwright]
+command = "npx"
+args = ["@playwright/mcp@latest", "--headless"]
+
+[mcp_servers.chrome-devtools]
+command = "npx"
+args = ["chrome-devtools-mcp@latest"]

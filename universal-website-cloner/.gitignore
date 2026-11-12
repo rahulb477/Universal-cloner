@@ -1,0 +1,13 @@
+node_modules/
+# Never commit credentials, sessions or captured private data
+.env
+.env.*
+!.env.example
+*.storage-state.json
+.auth/
+clone-workspace/
+# Generated artefacts
+artifacts/
+dist/
+*.log
+.DS_Store

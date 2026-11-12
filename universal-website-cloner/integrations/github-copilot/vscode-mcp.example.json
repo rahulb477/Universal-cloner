@@ -1,0 +1,7 @@
+{
+  "_comment": "EXAMPLE .vscode/mcp.json. Not active. Verify with 'MCP: List Servers' in VS Code.",
+  "servers": {
+    "playwright": { "type": "stdio", "command": "npx", "args": ["@playwright/mcp@latest", "--headless"] },
+    "chrome-devtools": { "type": "stdio", "command": "npx", "args": ["chrome-devtools-mcp@latest"] }
+  }
+}
